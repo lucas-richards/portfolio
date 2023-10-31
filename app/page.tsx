@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Pic from '@/public/profile_pic.jpg'
+import Projects from '@/app/projects/page'
 
 
 export default function Home() {
@@ -72,6 +73,7 @@ export default function Home() {
           
         </div>
       </div>
+      <Projects />
 
     </div>
   )
