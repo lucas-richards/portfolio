@@ -1,4 +1,3 @@
-import ContactForm from '../components/ContactForm'
 import Form from '../components/Form'
 import prisma from '../db'
 
@@ -26,7 +25,7 @@ export default async function Guestbook(){
             </div>
             <div className="w-full">
                 <div className="max-w-[500px] mx-auto mt-8">
-                    <ContactForm />
+                    
                     <Form />
 
                     <div className='flex flex-col space-y-2 m-2'>
