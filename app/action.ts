@@ -64,7 +64,7 @@ export async function saveEmail(formData: FormData){
             to: `${emailTo}`,
             subject: 'Thank You for Contacting Me',
             text: 'Thank You for Contacting Me',
-            html: `<h4>Hi ${nameTo},</h4><p> Thank you for reaching out to me. I have received your message and will get back to you as soon as possible.</p>`,
+            html: `<h1>Hi ${nameTo},</h1><p> Thank you for reaching out to me. I have received your message and will get back to you as soon as possible.</p>`,
           };
       
           const result = await transport.sendMail(mailOptions);
