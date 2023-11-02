@@ -20,7 +20,7 @@ export default function Projects() {
         {id:1, title:'Task Master', desc: 'Task management app where project managers can create, prioritize, and track tasks. Including features like due dates, task project, task comments and task assignments.', stack:['vs','h','c','p','dj','sql','bst','aws'], img:taskImg, gitLink:'https://github.com/lucas-richards/task_master', depLink:'https://task-master-lucas1.onrender.com/'},
         {id:2, title:'Smoothies App', desc: 'Smoothies App allows you to create your own smoothie including macro-nutrients and share it with the world.', stack:['vs','h','c','m','e','n','js','mat','aws'], img:smooImg, gitLink:'https://github.com/lucas-richards/Smoothie-App', depLink:'https://smoothieapp.fly.dev/'},
         {id:3, title:'Solitaire', desc: 'Solitaire goes back to my childhood vacations, those rainy days at the beach house. This game simulates a solitaire with cards from the comfort of your home.', stack:['vs','h','c','js'], img:solImg, gitLink:'https://github.com/lucas-richards/Solitaire-with-cards', depLink:'https://lucas-richards.github.io/Solitaire-with-cards/'},
-        {id:4, title:'Pilot Plate', desc: 'COMING SOON! Pilot Plate is the ultimate app for making quick dining decisions, discovering new restaurants, and planning unforgettable culinary adventures with friends.', stack:['vs','h','c',], img:pilotImg, gitLink:'/', depLink:'http://localhost:3000/projects'},
+        {id:4, title:'Pilot Plate', desc: 'Pilot Plate is the ultimate app for making quick dining decisions, discovering new restaurants, and planning unforgettable culinary adventures with friends.', stack:['vs','h','c','m','e','r','n','js','bst'], img:pilotImg, gitLink:'https://github.com/lucas-richards/hackathonAPI', depLink:'https://plate-pilot.onrender.com/'},
         {id:5, title:'Share', desc: 'COMING SOON! Share is your go-to app for effortless blogging, enabling you to share your thoughts, experiences, and creativity with the world in a breeze.', stack:['vs','h','c',], img:comImg, gitLink:'/', depLink:'http://localhost:3000/projects'},
     ]
 
@@ -261,7 +261,7 @@ export default function Projects() {
                 
             <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-10 pt-8">
                 {data.map(project =>(
-                    <article key={project.id} onClick={() => handleClick(project.stack)} className="project-container overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-mainColor">
+                    <article key={project.id} onClick={() => handleClick(project.stack)} className="project-container mt-5 overflow-hidden dark:border-zinc-600 rounded-lg border border-gray-100 bg-white shadow-lg dark:bg-black dark:shadow-gray-700 shadow-mainColor">
                         <div className='h-56 w-full relative'>
                             <Image 
                                 fill 

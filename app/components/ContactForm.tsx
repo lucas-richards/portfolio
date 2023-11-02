@@ -36,7 +36,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='mb-5'>
         {successMessage ? (
         <h6 className="text-green-600">{successMessage}</h6>
       ) : (
