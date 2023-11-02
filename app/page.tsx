@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Pic from '@/public/profile_pic.jpg'
 import Projects from '@/app/projects/page'
+import Guestbook from './guestbook/page'
+import ContactMe from './contactMe/page'
 
 
 export default function Home() {
@@ -74,6 +76,15 @@ export default function Home() {
         </div>
       </div>
       <Projects />
+      <ContactMe />
+      <footer
+        className='divide-y mt-8 divide-gray-100 dark:divide-gray-700'
+      >
+        <div className="copyright-container flex flex-col md:flex-row items-center justify-center space-y-2 md:space-x-5 pt-5 pb-8">
+          &copy; {new Date().getFullYear()} Lucas Richards
+        </div>
+
+      </footer>
 
     </div>
   )
