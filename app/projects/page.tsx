@@ -64,8 +64,6 @@ export default function Projects() {
 
     return(
         <div id="stack" className="divide-y">
-
-        
             
             <div className='sticky top-2 bg-white dark:bg-black z-50 m-10 p-2 rounded-lg shadow-lg dark:shadow-gray-700 '>
                 <div className='grid gap-2 sm:grid-cols-8 grid-cols-4  lg:gap-5 p-2 place-items-center '>

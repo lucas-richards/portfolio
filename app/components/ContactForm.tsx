@@ -1,10 +1,12 @@
 "use client"
 import React, { useState } from 'react';
 import { saveEmail } from '../action';
+import Spinner from './Spinner'
 
 export default function ContactForm() {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
-  
+  const [spinner, setSpinner] = useState(<Spinner />)
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSuccessMessage('Sending email...');
@@ -21,6 +23,7 @@ export default function ContactForm() {
 
     await saveEmail(formData);
     setSuccessMessage('Email sent successfully!');
+    setSpinner(<></>)
 
     // Reset the form
     form.reset();
@@ -29,7 +32,9 @@ export default function ContactForm() {
   return (
     <div className="mb-5">
       {successMessage ? (
-        <h6 className="text-green-600">{successMessage}</h6>
+        
+        <h6 className="text-green-600">{spinner}{successMessage}</h6>
+        
       ) : (
         <form onSubmit={handleSubmit}>
           <div>
@@ -62,7 +67,7 @@ export default function ContactForm() {
             type="submit"
             className="flex items-center justify-center mt-3 p-4 font-medium h-7 bg-mainColor/30 hover:bg-mainColor text-neutral-900 dark:text-neutral-100 rounded w-30"
           >
-            Send Email
+            Send Email {spinner}
           </button>
         </form>
       )}
