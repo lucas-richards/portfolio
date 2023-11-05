@@ -7,6 +7,7 @@ export default function ContactForm() {
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSuccessMessage('Sending email...');
 
     const form = e.currentTarget as HTMLFormElement;
     
