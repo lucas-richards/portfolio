@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import { Provider } from './components/Provider'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+     
+     <Script src="https://www.googletagmanager.com/gtag/js?id=G-2K3W6P1GYT" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-2K3W6P1GYT');
+        `}
+      </Script>
       <body 
         className={`${inter.className} bg-white text-black dark:bg-[#090908] dark:text-white h-full selection:bg-gray-100 dark:selection:bg-gray-800`}
       >
