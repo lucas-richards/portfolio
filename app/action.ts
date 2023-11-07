@@ -75,7 +75,7 @@ export async function saveEmail(formData: FormData){
       }
       
       sendMail()
-        .then((result) => console.log('Email sent...', result))
+        .then((result) => console.log('Email sent', result))
         .catch((error) => console.log(error.message));
 
 }
