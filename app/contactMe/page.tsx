@@ -10,7 +10,8 @@ export default async function ContactMe(){
                     <div className='relative float-right border-gray-50 '>
                         <a 
                             className='flex items-center m-2'
-                            href='https://www.dropbox.com/scl/fi/j6dujhmix2wwb78rk4pho/Lucas-Richards-SE-Resume.docx?dl=1'>
+                            href='https://www.dropbox.com/scl/fi/byu52phob8sabcaog8e4r/Lucas-Richards-SE-Resume.pdf?dl=1'>
+                                
                             <p className='prose max-w-none mr-2 prose-lg dark:prose-invert xl:col-span-2'>Resume</p>
                         
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className='w-6 h-6 text-mainColor opacity-100 hover:opacity-75'>
