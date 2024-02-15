@@ -7,7 +7,9 @@ import smooImg from '../../public/smoothie.png'
 import solImg from '../../public/solitaire.png'
 import comImg from '../../public/comingsoon.jpeg'
 import pilotImg from '../../public/pilotPlate.png'
+import pilotImgMob from '../../public/pilotPlateMob.png'
 import choaImg from '../../public/choa.png'
+import iotImg from '../../public/iot.png'
 import { useState } from 'react'
 
 
@@ -17,8 +19,10 @@ const iconStyleOp = 'w-8 h-8 lg:w-12 lg:h-12 text-black hover:opacity-100 dark:t
 
 export default function Projects() {
     const data = [
+        {id:9, title:'eCommerce', desc: 'E-commerce platform, driven by the dynamic capabilities of Medusa.js. Enjoy a sleek and modern shopping experience with responsive design, seamless navigation, and efficient order management.', stack:['vs','h','c','m','e','r','n','js','bst'], img:comImg, gitLink:'https://github.com/lucas-richards/django_arduino', depLink:'https://django-arduino-backend.onrender.com/equipments/1'},
+        {id:8, title:'IoT Manufacturing', desc: 'Powerful manufacturing equipment monitoring system using Django and IoT technology. Real-time data collection and intuitive dashboards.', stack:['vs','h','c','p','dj','sql','bst'], img:iotImg, gitLink:'https://github.com/lucas-richards/django_arduino', depLink:'https://django-arduino-backend.onrender.com/equipments/1'},
         {id:7, title:'Pilot Plate Mobile', desc: 'Mobile Pilot Plate is the ultimate mobile app for making quick dining decisions, discovering new restaurants, and planning unforgettable culinary adventures with friends.', stack:['vs','h','c','m','e','r','n','js','bst'], img:pilotImg, gitLink:'https://github.com/lucas-richards/plate-pilot-native', depLink:'https://plate-pilot.onrender.com/'},
-        {id:6, title:'Pilot Plate Desktop', desc: 'Desktop Pilot Plate is the ultimate desktop app for making quick dining decisions, discovering new restaurants, and planning unforgettable culinary adventures with friends.', stack:['vs','h','c','m','e','r','n','js','bst'], img:pilotImg, gitLink:'https://github.com/lucas-richards/hackathonAPI', depLink:'https://plate-pilot.onrender.com/'},
+        {id:6, title:'Pilot Plate Desktop', desc: 'Desktop Pilot Plate is the ultimate desktop app for making quick dining decisions, discovering new restaurants, and planning unforgettable culinary adventures with friends.', stack:['vs','h','c','m','e','r','n','js','bst'], img:pilotImgMob, gitLink:'https://github.com/lucas-richards/hackathonAPI', depLink:'https://plate-pilot.onrender.com/'},
         {id:5, title:'Non-Profit Web Redesign', desc: "Children's healthcare of Atlanta non-profit website redesign. Pro bono hackathon", stack:['vs','h','c','m','e','r','n','js','bst'], img:choaImg, gitLink:'https://github.com/DaveKobrin/choa_npo_redo', depLink:'https://choa-npo-redo-agrimes23.vercel.app/'},
         {id:4, title:'Trading Playground', desc: 'Is a simulated space where individuals can practice and learn about trading financial assets without using real money.', stack:['vs','h','c','m','e','r','n','js','bst'], img:tradImg, gitLink:'https://github.com/lucas-richards/tradingPlaygroundAPI', depLink:'https://trading-playground.netlify.app/'},
         {id:3, title:'Task Master', desc: 'Task management app where project managers can create, prioritize, and track tasks. Including features like due dates, task project, task comments and task assignments.', stack:['vs','h','c','p','dj','sql','bst','aws'], img:taskImg, gitLink:'https://github.com/lucas-richards/task_master', depLink:'https://task-master-lucas1.onrender.com/'},
